@@ -5,6 +5,8 @@
 </head>
 <body>
   
+  <h1 class id="blink"></h1>
+     
   <ul>
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#news">News</a></li>
@@ -12,6 +14,34 @@
   <li><a href="#about">About</a></li>
 </ul>
   <style>
+    
+    
+.blink_text {
+    animation:1s blinker linear infinite;
+    -webkit-animation:1s blinker linear infinite;
+    -moz-animation:1s blinker linear infinite;
+     color: white;
+     font-family:Georgia;
+     text-align:center;
+     font-size:62px;
+text-
+    }
+    @-moz-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+    @-webkit-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+    @keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+    }
     ul {
     list-style-type: none;
     margin: 0;
@@ -40,18 +70,20 @@ li a:hover {
  min-width: 100%; min-height: 100%;
  width: auto; height: auto; z-index: -100;
  background-size: cover;
- margin: 0 auto;
+ margin: 0 auto ;
+     zoom: 30 %;
 }
+   
 
   
   
   h1{
     font-size:25px;
-    font-background:white;
+    font-color:white;
     }
 
   </style>
-  <h1><blink>Tesla 3!</blink></h1>
+ 
   
 <video autoplay loop id="vid">
 <source src="https://www.tesla.com/ns_videos/Model3_WebsiteHero_Master_D.mp4?20170801" type="video/mp4">
