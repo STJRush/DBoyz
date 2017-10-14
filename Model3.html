@@ -7,20 +7,16 @@
  
   
   
-  <div id="nav">
-  <ul>
-    <li><a href="#">Home</a>
-    </li>
-    <li><a href="#">Tesla</a>
-    </li>
-    <li><a href="#">Updates</a>
-    </li>
-    <li><a href="#">News</a>
-    </li>
-  </ul>
-</div>
-  
-  <video src="https://youtu.be/BCoZ-MAd3uk" width="1080" height="280" loop=true> </video>
+ <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Tesla</a></li>
+  <li><a href="#contact">Updates</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+  <iframe width="1080" height="290"
+src="https://youtu.be/BCoZ-MAd3uk">
+</iframe>
   
   <h2 id="model-3">Model 3</h2>
   
@@ -41,37 +37,29 @@
       font-size: 15px;
       float: centre;
       }
-    
-  #nav {
-  list-style: none;
-  font-weight: bold;
-  margin-bottom: 10px;
-  width: 100%;
-  text-align: center;
-  width: 1080;
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
-#nav ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
+
+li {
+    float: left;
 }
-#nav li {
-  margin: 0px;
-  display:
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-#nav li a {
-  padding: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-  background-color: black;
-  float: left;
-  font-style: sans serif;
-}
-#nav li a:hover {
-  color: #FFFFFF;
-  background-color: #cccccc;
-    }
+
+li a:hover {
+    background-color: #111;
+
    
     h1{
     font-size:25px;
