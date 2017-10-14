@@ -5,23 +5,57 @@
 </head>
 <body>
   
-  <h1 class id="blink"></h1>
+  <h1 class id="blink">New Tesla 3!</h1>
      
   <div id="nav">
   <ul>
     <li><a href="#">Home</a>
     </li>
-    <li><a href="#">News</a>
+    <li><a href="#">Music</a>
     </li>
-    <li><a href="#">Tesla</a>
+    <li><a href="#">Education</a>
     </li>
-    <li><a href="#">About</a>
+    <li><a href="#">Fun</a>
+    </li>
+    <li><a href="#">Entertainment</a>
+    </li>
+    <li><a href="#">Utilities</a>
     </li>
   </ul>
 </div>
   
+  <p></p>
+  
   <style>
-    
+  #nav {
+  list-style: none;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+#nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+}
+#nav li {
+  margin: 0px;
+  display:
+}
+#nav li a {
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  float: left;
+  font-style: monospace;
+}
+#nav li a:hover {
+  color: #FFFFFF;
+  background-color: #35af3b;
+    }
     
 .blink_text {
     animation:1s blinker linear infinite;
@@ -50,51 +84,10 @@ text-
      }
     }
     
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #cccccc;
-}
 
-#nav {
-  list-style: monospace;
-  font-weight: bold;
-  margin-bottom: 10px;
-  width: 100%;
-  text-align: center;
-}
-#nav ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0;
-}
-#nav li {
-  margin: 0px;
-  display:
-}
-#nav li a {
-  padding: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-  background-color: transparent;
-  float: left
-}
-#nav li a:hover {
-  color: #FFFFFF;
-  background-color: transparent;
-}
 
-   #vid {
- position: fixed; right: 0; bottom: 0;
- min-width: 100%; min-height: 100%;
- width: auto; height: auto; z-index: -100;
- background-size: cover;
- margin: 0 auto ;
-     zoom: 30 %;
-}
+
+
    
 
   
@@ -107,9 +100,8 @@ text-
   </style>
  
   
-<video autoplay loop id="vid">
+
 <source src="https://www.tesla.com/ns_videos/Model3_WebsiteHero_Master_D.mp4?20170801" type="video/mp4">
-</video>
 
 </body>
 </html>
