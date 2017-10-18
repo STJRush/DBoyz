@@ -1,86 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Tesla model 3</title>
-</head>
-<body>
- 
+<title>Tesla Model 3</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+
+h1{
+font-family: monospace;
+text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
   
-  
- <ul>
-  <li><a class="active" href="">Home</a></li>
-  <li><a href="">Tesla</a></li>
-  <li><a href="">Updates</a></li>
-  <li><a href="">About</a></li>
-</ul>
-<div id="video">
- <iframe src="https://www.youtube.com/embed/v8c1imE7Spc" frameborder="0" allowfullscreen></iframe>
- </div>
-  
-  <h2>Model 3</h2>
-  
-  <div id="intro">
-  <p>Designed to attain the highest safety ratings in every category, Model 3 achieves 220 miles of range while starting at only $35,000 before incentives.</p>
-  </div>
- 
-  <style>
-   
-   .video{
-    position:absolute;
-    z-index:-1;
-    top:0;
-    left:0;
-    width:100%; 
-    height:100vh;
-   }
-    
-    h2{
-      font-size: 30px;
-      font-family: monospace;
-      text-align: centre;
-    }
-    
-    
-    
-    .intro{
-      font-size: 15px;
-      text-align: centre;
-      font-family: sans-serif;
-      }
-   
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+}
+
+
+.topnav {
     overflow: hidden;
     background-color: #333;
 }
 
-li {
-    float: left;
-}
 
-li a {
+.topnav a {
+    float: left;
     display: block;
-    color: white;
+    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
 
-   
-    h1{
-    font-size:25px;
-    font-style: sans serif;
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+
+.column.side {
+    width: 25%;
+}
+
+
+.column.middle {
+    width: 50%;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
     }
+}
+</style>
+</head>
+<body>
 
-  </style>
- 
+  <h1>Tesla Model 3</h1>
+  <p id="text-under-header">Teslas environtmentally friendly cars and Intels Infotainment system have joined together to make something amazing </p>
+
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Images</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Infotainment System </h2>
+    <p>The infotainment system is a collection of hardware and software in automobiles that provides audio or video entertainment.</p>
+  </div>
+  <div class="column middle">
+    <h2>Little bit about Tesla</h2>
+    <p></p>
+    <p></p>
+  </div>
+  <div class="column side">
+    <h2>History of Tesla</h2>
+    <p>Tesla was founded in 2003 by a group of engineers who wanted to prove that people didn’t need to compromise to drive electric cars and that electric vehicles can be better, quicker and more fun to drive than gasoline cars. Today, Tesla builds not only all-electric vehicles but also clean energy generation and storage products. Tesla believes the faster the world stops relying on fossil fuels and moves towards a zero-emission future, the better.</p>
+  </div>
+</div>
   
-
-
 </body>
 </html>
